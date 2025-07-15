@@ -1,0 +1,83 @@
+/* === About Section === */
+.about-section {
+  position: relative;
+  background: url("images/aboutbackground.jpg") no-repeat center center/cover;
+  padding: 80px 20px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.about-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #f1f1f1;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.about-section .highlights {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.highlight-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.highlight-box h3 {
+  font-size: 22px;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.highlight-box p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section h2 {
+    font-size: 28px;
+  }
+
+  .about-section p {
+    font-size: 16px;
+  }
+
+  .highlight-box {
+    flex: 1 1 100%;
+  }
+}
